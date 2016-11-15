@@ -5,6 +5,8 @@
  */
 package fibonacci;
 
+import java.util.Scanner;
+
 /**
  *
  * @author ShadowX
@@ -16,7 +18,11 @@ public class Fibonacci {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        for (int i = 0; i < 30; i++) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("How many iterations would you like to go?");
+        int max = scan.nextInt();
+        System.out.println("");
+        for (int i = 0; i < max; i++) {
             System.out.println(i + 1 + ": " + fibonacci(i));
         }
     }
